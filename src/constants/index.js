@@ -1,0 +1,5 @@
+export const DOGS = {
+    LOAD: 'LOAD_DOGS',
+    LOAD_SUCCESS: 'LOAD_DOGS_SUCCESS',
+    LOAD_FAILURE: 'LOAD_DOGS_FAILURE'
+}
