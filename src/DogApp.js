@@ -1,13 +1,15 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
-import DogImage from '../src/containers/DogImage';
+import { StyleSheet, SafeAreaView } from 'react-native';
+import DogImage from '../src/containers/DogImageContainer';
 import GetDogButton from '../src/containers/GetDogButtonContainer';
+import Header from '../src/components/Header';
 
 const DogApp = () => (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
+        <Header />
         <DogImage />
         <GetDogButton />
-    </View>
+    </SafeAreaView>
 );
 
 export default DogApp;
@@ -15,7 +17,8 @@ export default DogApp;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        flexDirection: 'column',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
     }
 });

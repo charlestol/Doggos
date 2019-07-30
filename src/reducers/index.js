@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
-import dogs from './DogsReducer';
+import image from './DogsReducer';
 import isLoading from './LoadingReducer';
 import error from './ErrorReducer';
 
 export default combineReducers({
-    dogs,
+    image,
     isLoading,
     error
 });

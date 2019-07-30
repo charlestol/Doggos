@@ -5,7 +5,7 @@ import { loadDogs } from '../actions';
 import GetDogsButton from '../components/GetDogButton';
 
 const GetDogsButtonContainer = ({isLoading, loadDogs}) => (
-    <View style={{ width: 160, flex: 1, justifyContent: 'flex-end', marginBottom: 60 }}>
+    <View style={{ width: 160, flex: 1, justifyContent: 'flex-end', marginBottom: 40 }}>
         <GetDogsButton
             onPress={() => !isLoading && loadDogs()}
             loading={isLoading}

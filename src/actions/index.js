@@ -4,10 +4,10 @@ export const loadDogs = () => { console.log('loading'); return ({
     type: DOGS.LOAD
 });}
 
-export const setDogs = dogs => ({
+export const setDogs = image => ({
     type: DOGS.LOAD_SUCCESS,
     payload: {
-        dogs
+        image
     }
 });
 
